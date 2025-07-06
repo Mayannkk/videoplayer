@@ -1,0 +1,16 @@
+{
+  "name": "videoplayer",
+  "version": "1.0.0",
+  "description": "A video managing backend application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "backend",
+    "learning"
+  ],
+  "author": "Mayank Pal",
+  "license": "ISC"
+}
