@@ -24,9 +24,14 @@ app.use(
 app.use(express.urlencoded({ extended: true, limit: '16kb' }));
 
 // static configuration is use to store file, folder in our own server like in a public folder(like public assets).
-app.use(express.static);
+app.use(express.static('public'));
 
 // cookie parser is used to get access of user's browser cookie so server can get and add(CRUD) the cookies. only server can access those cookies.
 app.use(cookieParser());
+
+// Importing user routes, always import routes after the configuration of middlewares
+import userRoutes from './routes/user.routes.js';
+
+app.use('/api/v1/users', userRoutes);
 
 export { app };
